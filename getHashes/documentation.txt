@@ -1,0 +1,31 @@
+getHashes.py is a script to automate the process of gathering various hashes 
+for a PE file while conducting malware analysis. getHashes.py will grab the 
+PE MD5, IMPHASH, SHA1, and all the MD5 hashes for the various .sections within
+the PE file.
+
+usage: getHashes.py <example.exe>
+
+----------------------------------------------------------------------------------
+example output (from calc.exe):
+
+
+
+getHashes.py - a tool to gather PE related hashes, for malware analysis
+Usage: getHashes.py <file>
+
+Filename: calc.exe
+Compile timestamp: 1971-09-24 12:02:24
+
+File hashes:
+        IMPHASH 8EEAA9499666119D13B3F44ECD77A729
+        MD5     5DA8C98136D98DFEC4716EDD79C7145F
+        SHA1    ED13AF4A0A754B8DAEE4929134D2FF15EBE053CD
+        SHA256  58189CBD4E6DC0C7D8E66B6A6F75652FC9F4AFC7CE0EBA7D67D8C3FEB0D5381F
+
+PE Sections (MD5):
+        .text   91AE3E6D8DD99CF5145FA1F799B021B0
+        .rdata  EB3219EE2F0D214838BD47DEC6EAAE16
+        .data   A7AA96CA6D23860C2373E5B00EA811F3
+        .pdata  AF64767B80AE48B0B4B53B13C2409A51
+        .rsrc   3490AECDFB3539BC34A13BEDB22034A6
+        .reloc  EDA30E6015238C42B917BC1FEF628084
