@@ -1,0 +1,2 @@
+# scripts
+Malware analysis scripts
